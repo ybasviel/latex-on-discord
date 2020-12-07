@@ -1,0 +1,8 @@
+*.token
+*.pdf
+*.log
+*.dvi
+*.aux
+*.png
+*.tex
+!/latexondiscord/latex-on-discord-template.tex
