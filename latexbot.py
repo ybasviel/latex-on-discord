@@ -1,10 +1,14 @@
 import discord
 import re
 import subprocess
+import os
 
 # 自分のBotのアクセストークン
 with open("bot.token") as tokenfile:
     TOKEN = tokenfile.read()
+
+with open("./latexondiscord/image.png", mode="w") as file:
+    file.write("") #仮の画像ファイル
 
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
