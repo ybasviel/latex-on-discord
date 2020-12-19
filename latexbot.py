@@ -31,7 +31,7 @@ async def on_message(message):
     #latex文法
     if message.content.startswith("```latex"):
         text = message.content
-        text = text[8:len(text)-3]
+        text = text[8:-3]
         #```latex〜```を取り外す
 
         imgpath = "./latexondiscord/image.png"
@@ -48,7 +48,7 @@ async def on_message(message):
 
 def latexmessage(message):
     text = repr(message) #バックスラッシュを2倍にしてくれるらしい
-    text = text[1:len(text)-1] #reprでつけられた''の囲いを外す
+    text = text[1:-1] #reprでつけられた''の囲いを外す
 
     #テンプレを開く
     with open("./latexondiscord/latex-on-discord-template.tex") as file:
